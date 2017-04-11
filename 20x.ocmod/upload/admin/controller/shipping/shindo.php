@@ -190,27 +190,28 @@ class ControllerShippingShindo extends Controller {
 		$data['igsjne_services'] = array();
 		$data['igstiki_services'] = array();
 
-		$data['igsjnepro_services'][] = array(
-			'text'  => 'JNE City Courier',
-			'value' => 'CTC'
-		);
-		$data['igsjnepro_services'][] = array(
-			'text'  => 'JNE City Courier',
-			'value' => 'CTCOKE'
-		);
-		$data['igsjnepro_services'][] = array(
-			'text'  => 'JNE City Courier',
-			'value' => 'CTCSPS'
-		);
-		$data['igsjnepro_services'][] = array(
-			'text'  => 'JNE City Courier',
-			'value' => 'CTCYES'
-		);
 
 		$data['igsjne_services'][] = array(
 			'text'  => 'Yakin Esok Sampai',
 			'value' => 'YES'
 		);
+		$data['igsjne_services'][] = array(
+			'text'  => 'JNE City Courier',
+			'value' => 'CTC'
+		);
+		$data['igsjne_services'][] = array(
+			'text'  => 'JNE City Courier',
+			'value' => 'CTCOKE'
+		);
+		$data['igsjne_services'][] = array(
+			'text'  => 'JNE City Courier',
+			'value' => 'CTCSPS'
+		);
+		$data['igsjne_services'][] = array(
+			'text'  => 'JNE City Courier',
+			'value' => 'CTCYES'
+		);
+
 		$data['igsjne_services'][] = array(
 			'text'  => 'JNE Trucking',
 			'value' => 'JTR'
