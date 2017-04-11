@@ -190,14 +190,23 @@ class ControllerShippingShindo extends Controller {
 		$data['igsjne_services'] = array();
 		$data['igstiki_services'] = array();
 
-		$data['igsjne_services'][] = array(
-			'text'  => 'Ongkos Kirim Ekonomis',
-			'value' => 'OKE'
+		$data['igsjnepro_services'][] = array(
+			'text'  => 'JNE City Courier',
+			'value' => 'CTC'
 		);
-		$data['igsjne_services'][] = array(
-			'text'  => 'Layanan Reguler',
-			'value' => 'REG'
+		$data['igsjnepro_services'][] = array(
+			'text'  => 'JNE City Courier',
+			'value' => 'CTCOKE'
 		);
+		$data['igsjnepro_services'][] = array(
+			'text'  => 'JNE City Courier',
+			'value' => 'CTCSPS'
+		);
+		$data['igsjnepro_services'][] = array(
+			'text'  => 'JNE City Courier',
+			'value' => 'CTCYES'
+		);
+
 		$data['igsjne_services'][] = array(
 			'text'  => 'Yakin Esok Sampai',
 			'value' => 'YES'
@@ -223,14 +232,7 @@ class ControllerShippingShindo extends Controller {
 			'value' => 'JTR250'
 		);
 		//----
-		$data['igstiki_services'][] = array(
-			'text'  => 'REGULAR SERVICE',
-			'value' => 'REG'
-		);
-		$data['igstiki_services'][] = array(
-			'text'  => 'ECONOMY SERVICE',
-			'value' => 'ECO'
-		);
+
 		$data['igstiki_services'][] = array(
 			'text'  => 'OVER NIGHT SERVICE',
 			'value' => 'ONS'

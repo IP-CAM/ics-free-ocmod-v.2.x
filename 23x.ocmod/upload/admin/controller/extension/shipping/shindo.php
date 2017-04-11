@@ -75,7 +75,7 @@ class ControllerExtensionShippingShindo extends Controller {
 		} else {
 			$data['error_province_id'] = '';
 		}
-		
+
 		if (isset($this->error['city_id'])) {
 			$data['error_city_id'] = $this->error['city_id'];
 		} else {
@@ -190,14 +190,23 @@ class ControllerExtensionShippingShindo extends Controller {
 		$data['igsjne_services'] = array();
 		$data['igstiki_services'] = array();
 
-		$data['igsjne_services'][] = array(
-			'text'  => 'Ongkos Kirim Ekonomis',
-			'value' => 'OKE'
+		$data['igsjnepro_services'][] = array(
+			'text'  => 'JNE City Courier',
+			'value' => 'CTC'
 		);
-		$data['igsjne_services'][] = array(
-			'text'  => 'Layanan Reguler',
-			'value' => 'REG'
+		$data['igsjnepro_services'][] = array(
+			'text'  => 'JNE City Courier',
+			'value' => 'CTCOKE'
 		);
+		$data['igsjnepro_services'][] = array(
+			'text'  => 'JNE City Courier',
+			'value' => 'CTCSPS'
+		);
+		$data['igsjnepro_services'][] = array(
+			'text'  => 'JNE City Courier',
+			'value' => 'CTCYES'
+		);
+
 		$data['igsjne_services'][] = array(
 			'text'  => 'Yakin Esok Sampai',
 			'value' => 'YES'
@@ -223,14 +232,7 @@ class ControllerExtensionShippingShindo extends Controller {
 			'value' => 'JTR250'
 		);
 		//----
-		$data['igstiki_services'][] = array(
-			'text'  => 'REGULAR SERVICE',
-			'value' => 'REG'
-		);
-		$data['igstiki_services'][] = array(
-			'text'  => 'ECONOMY SERVICE',
-			'value' => 'ECO'
-		);
+
 		$data['igstiki_services'][] = array(
 			'text'  => 'OVER NIGHT SERVICE',
 			'value' => 'ONS'
@@ -262,13 +264,13 @@ class ControllerExtensionShippingShindo extends Controller {
 		if (!$this->request->post['shindo_apikey']) {
 			$this->error['apikey'] = $this->language->get('error_apikey');
 		}
-		if (!$this->request->post['shindo_city_id']) {
+		/*if (!$this->request->post['shindo_city_id']) {
 			$this->error['city_id'] = $this->language->get('error_city_id');
 		}
 
 		if (!$this->request->post['shindo_province_id']) {
 			$this->error['province_id'] = $this->language->get('error_province_id');
-		}
+		}*/
 
 		return !$this->error;
 	}

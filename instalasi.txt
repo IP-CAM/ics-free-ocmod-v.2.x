@@ -1,0 +1,20 @@
+Requirement :
+1. OpenCart versi 2.x
+2. Pada Localisation->currency harus ada matauang Rupiah (IDR) tetapi tidak harus sebagai default.
+ 
+Petunjuk Instalasi :
+1. Extract file ongkos-kirim-starter.zip
+2. Masuk ke admin panel->extensions->extension installer
+3. Click upload dan Pilih file icsfree-xxx.ocmod.zip sesuai dengan versi opencart anda.
+4. Masuk ke extensions->modification dan click tombol refresh
+5. Masuk ke extensions->extensions dan pilih Shipping, untuk versi 2.0x, 2.1x, dan 2.2x masuk ke extensions->shipping.
+6. Click install pada extensi Ongkos Kirim STARTER.
+7. Click edit pada extensi tersebut.
+8. Masukkan API Key. Untuk mendapatkan API Key anda harus mendaftar ke eshopstarter.com dan melakukan order extensi "Ongkos Kirim STARTER". Setelah selesai melaukan order, pada menu download akan ada file key.txt yang berisi API Key.
+9. Setelah memasukkan API Key click simpan, kemudian kembali click tombol edit.
+10.Pada tab general Masukkan origin Province dan Origin City yaitu sebagai asal barang yang akan dikirim.
+11.Masuk ke tab masing-masing Jasa Pengiriman (JNE dan TIKI)
+12.Yang perlu diperhatikan isian Weight Class harus diisi Gram, karena jasa pengiriman JNE dan TIKI keduanya memakai satuan gram.
+13.Pilih service yang akan diaktifkan pada jasa pengiriman tersebut.
+14.Click save.
+   
